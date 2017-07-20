@@ -1,0 +1,70 @@
+
+
+<%- include header.ejs %>
+
+<!-- Page container -->
+<div class="page-container">
+
+  <!-- Page content -->
+  <div class="page-content">
+
+    <!-- Main content -->
+    <div class="content-wrapper">
+
+      <!-- Image grid -->
+
+
+      <div class="row">
+
+
+
+
+ <% for(var i=0; i<masaCount; i++) { %>
+
+
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="panel text-center">
+            <div class="panel-body">
+              <div class="heading-elements">
+                <ul class="icons-list">
+                  <li class="dropdown text-muted">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i> <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#"><i class="icon-sync"></i> Update data</a></li>
+                      <li><a href="#"><i class="icon-list-unordered"></i> Detailed log</a></li>
+                      <li><a href="#"><i class="icon-pie5"></i> Statistic</a></li>
+                      <li><a href="#"><i class="icon-cross3"></i> Clear list</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+<a href="/table?masaNumarasi=<%=i+1%>">
+              <!-- Progress counter -->
+              <div class="content-group-sm svg-center position-relative" id="goal-progress"><svg width="25" height="25"><g><img width="90" height="90" src="\images\<%= i+1; %>.png"/></g></svg><h2 class="mt-15 mb-5">Masa Boş</h2><div>Sipariş Bekleniyor</div><div class="text-size-small text-muted">10 Dakikadır Boş</div></div>
+              <!-- /progress counter -->
+</a>
+
+              <a class="heading-elements-toggle"><i class="icon-menu"></i></a></div>
+          </div>
+          <!-- /productivity goal -->
+
+
+
+        </div>
+          <% } %>
+      </div>
+      <!-- /image grid -->
+
+
+
+
+    </div>
+    <!-- /main content -->
+
+  </div>
+  <!-- /page content -->
+
+
+
+<%- include footer.ejs %>

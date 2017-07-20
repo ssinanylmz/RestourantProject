@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hesap Oluştur</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/inputs/touchspin.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/login.js"></script>
+    <script type="text/javascript" src="assets/js/pages/form_validation.js"></script>
+    <!-- /theme JS files -->
+
+</head>
+
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">NIPPY</a>
+
+        <ul class="nav navbar-nav pull-right visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+        </ul>
+    </div>
+
+
+</div>
+<!-- /main navbar -->
+
+
+<!-- Page container -->
+<div class="page-container login-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Registration form -->
+            <form method="post" action="/register">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div class="panel registration-form">
+                            <div class="panel-body">
+                                <div class="text-center">
+                                    <div class="icon-object border-success text-success"><i class="icon-plus3"></i></div>
+                                    <h5 class="content-group-lg">Hesap Oluştur <small class="display-block">Tüm alanları doldurunuz</small></h5>
+                                </div>
+
+                                <div class="form-group has-feedback">
+                                    <input name="sirketAdi" type="text" class="form-control" required="required" placeholder="Şirket Adı">
+                                    <div class="form-control-feedback">
+                                        <i class="icon-home5 text-muted"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="ad" type="text" class="form-control" required="required" placeholder="Ad">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-user-check text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="soyad" type="text" class="form-control" required="required" placeholder="Soyad">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-user-check text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="parola" type="password" class="form-control" required="required" placeholder="Parola">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-user-lock text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="parolaTekrari" type="password" class="form-control" required="required" placeholder="Parola Tekrar">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-user-lock text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="ePosta" type="email" class="form-control" required="required" placeholder="E-Posta">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-mention text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="telefon" class="form-control" required="required" placeholder="Telefon">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-phone text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" class="styled" checked="checked">
+                                            Demo hesap istiyorum. <a href="#">Demo hesap nedir?</a>
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"  class="styled" required="required">
+                                            Tüm <a href="#">Şartları ve Koşulları</a> okudum onaylıyorum.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="text-right">
+                                   <a href="/login"  class="btn btn-link"> <i class="icon-arrow-left13 position-left"></i> Giriş sayfasına dön</a>
+                                    <button type="submit" class="btn bg-teal-400 btn-labeled btn-labeled-right ml-10"><b><i class="icon-plus3"></i></b> Hesabımı Oluştur</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- /registration form -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+
+    <!-- Footer -->
+    <div class="footer text-muted">
+        &copy; 2017. <a href="#">Restorant Web App </a> by <a href="#" target="_blank">Sinan & Gökhan</a>
+    </div>
+    <!-- /footer -->
+
+</div>
+<!-- /page container -->
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<div class="panel panel-white">
+    <div class="panel-heading">
+        <h6 class="panel-title">Kurulum Sihirbazı</h6>
+        <div class="heading-elements">
+            <ul class="icons-list">
+                <li><a data-action="collapse"></a></li>
+                <li><a data-action="reload"></a></li>
+                <li><a data-action="close"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form class="stepy-validation" action="#">
+        <h6>Kişisel Bilgiler</h6>
+        <fieldset>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Başvuru sahibi: <span class="text-danger">*</span></label>
+                        <input type="text" name="name" value="<%= fiName %>" class="form-control required" placeholder="Ad">
+                    </div>
+                    <div class="form-group">
+                        <label>Başvuru sahibi: <span class="text-danger">*</span></label>
+                        <input type="text" name="lastn" value="<%= laName %>" class="form-control required" placeholder="Soyad">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Yetki Seçiniz: <span class="text-danger">*</span></label>
+                        <select name="position" data-placeholder="Rütbe" class="select required">
+                            <option></option>
+                            <optgroup label="Rütbe">
+                                <option value="1">Müdür</option>
+                                <option value="2">Satış Sorumlusu</option>
+                                <option value="3">Garson</option>
+                                <option value="4">Kasiyer</option>
+                            </optgroup>
+
+
+
+
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>E-Posta: <span class="text-danger">*</span></label>
+                        <input type="email" value="<%= uMail %>" name="email" class="form-control required" placeholder="info@nippy.com">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>TC No:</label>
+                        <input type="text" name="tc" class="form-control" data-mask="99999999999">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Telefon #:</label>
+                        <input type="text" value="<%= uPhone %>" name="tel" class="form-control" placeholder="+90(212)-547-34-61" data-mask="+99(999)-999-99-99">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Doğum Tarihi:</label>
+                            <div class="form-group">
+                                <select name="birth-month" data-placeholder="Ay" class="select">
+                                    <option></option>
+                                    <option value="1">Ocak</option>
+                                    <option value="2">Şubat</option>
+                                    <option value="3">Mart</option>
+                                    <option value="4">Nisan</option>
+                                    <option value="5">Mayıs</option>
+                                    <option value="6">Haziran</option>
+                                    <option value="7">Temmuz</option>
+                                    <option value="8">Ağustos</option>
+                                    <option value="9">Eylül</option>
+                                    <option value="10">Ekim</option>
+                                    <option value="11">Kasım</option>
+                                    <option value="12">Aralık</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label>&nbsp;</label>
+                            <div class="form-group">
+                                <select name="birth-day" data-placeholder="Gün" class="select">
+                                    <option></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="...">...</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label>&nbsp;</label>
+                            <div class="form-group">
+                                <select name="birth-year" data-placeholder="Yıl" class="select">
+                                    <option></option>
+                                    <option value="1">1980</option>
+                                    <option value="2">1981</option>
+                                    <option value="3">1982</option>
+                                    <option value="4">1983</option>
+                                    <option value="5">1984</option>
+                                    <option value="6">1985</option>
+                                    <option value="7">1986</option>
+                                    <option value="8">1987</option>
+                                    <option value="9">1988</option>
+                                    <option value="10">1989</option>
+                                    <option value="11">1990</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label>Logo:</label>
+                        <input name="recommendations" type="file" class="file-styled">
+                        <span class="help-block">Format: png, ico. Maks. 2Mb</span>
+                    </div>
+                </div>
+        </fieldset>
+
+
+
+        <h6>Restorant Bilgileri</h6>
+        <fieldset>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Şirket: <span class="text-danger">*</span></label>
+                        <input type="text" name="sirket_adi" placeholder="Şirket Adı" class="form-control required">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bölge: <span class="text-danger">*</span></label>
+                        <select name="bolge_adi" data-placeholder="Lütfen bölgenizi seçiniz..." class="select-simple">
+                            <option></option>
+                            <option value="marmara">Marmara</option>
+                            <option value="ege">Ege</option>
+                            <option value="karadeniz">Karadeniz</option>
+                            <option value="ic-anadolu">İç Anadolu</option>
+                            <option value="dogu-anadolu">Doğu Anadolu</option>
+                            <option value="guney-anadolu">Güney Doğu Anadolu</option>
+                            <option value="akdeniz">Akdeniz</option>
+
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6">
+
+
+                    <div class="form-group">
+                        <label>İl: <span class="text-danger">*</span></label>
+                        <select name="sube_ili" data-placeholder="Lütfen ilinizi seçiniz..." class="select-simple">
+                            <option></option>
+                            <option value="il">İller</option>
+
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>İlçe: <span class="text-danger">*</span></label>
+                        <select name="sube_ilcesi" data-placeholder="Lütfen ilçenizi seçiniz..." class="select-simple">
+                            <option></option>
+                            <option value="ilce">İlçeler</option>
+
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label>Şube Adı: <span class="text-danger">*</span></label>
+                        <input type="text" name="sube_adi" placeholder="Şube Adı" class="form-control required">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Şube Telefonu: <span class="text-danger">*</span></label>
+                        <input type="text" name="rest_telefon" placeholder="Şube Telefonu" class="form-control required">
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Mail: <span class="text-danger">*</span></label>
+                        <input type="text" name="rest_mail" placeholder="Şube Mail" class="form-control required">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Masa Sayısı: <span class="text-danger">*</span></label>
+                        <input type="text" name="rest_masa_sayisi" placeholder="20" class="form-control required">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Adres Bilgileri:</label>
+                        <textarea name="rest_adres" rows="4" cols="4" placeholder="Açık adres bilginizi giriniz" class="form-control"></textarea>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label>Logo:</label>
+                        <input name="recommendations" type="file" class="file-styled">
+                        <span class="help-block">Format: png, ico. Maks. 2Mb</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </fieldset>
+
+        <h6>Bilgileri Kaydet</h6>
+        <fieldset>
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+
+                <div class="col-md-6">
+
+                </div>
+            </div>
+
+
+        </fieldset>
+        <button type="submit" class="btn btn-primary stepy-finish">Submit <i class="icon-check position-right"></i></button>
+    </form>
+</div>
